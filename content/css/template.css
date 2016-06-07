@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,cyrillic,latin-ext,cyrillic-ext");
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #ffffff url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    /*background-size: cover;*/
+}
+
+.container {
+    width: 960px;
+    display: table;
+    margin: 0 auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    color: rgba(77, 148, 224, 1);
+    text-decoration: underline;
+}
+
+a:hover, a:active {
+    outline: 0 none;
+    color: rgba(77, 148, 224, 0.8);
+}
+
+.content-block {
+    padding: 64px 0 0 0;
+    /*border: 1px solid red;*/
+    width: 100%;
+    float: left;
+    display: table;
+}
+
+.content-block .about-product-section {
+    width: 640px;
+    display: table-cell;
+}
+
+.content-block .purchase {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.content-block .platforms-container {
+    width: 100%;
+    float: left;
+    padding-top: 8px;
+}
+
+.content-block .titles {
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+.content-block .titles h1 {
+    color: #2d3138;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.content-block .titles span {
+    color: #6f7683;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.content-block .about-product-section .usefull-links {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+
+.content-block .about-product-section .usefull-links > ul {
+    width: 232px;
+    display: block;
+    float: left;
+}
+
+.content-block .about-product-section .usefull-links > ul li {
+    width: 100%;
+    display: block;
+    padding: 0 10px 0 0;
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
+
+.content-block .about-product-section .usefull-links > ul li a {
+    font-size: 16px;
+}
+
+/*Price Widget*/
+.content-block .purchase .price-widget {
+    background: #ffffff;
+    border: 1px solid #d1d3d8;
+    width: 100%;
+    float: left;
+}
+
+.content-block .purchase .price-widget .price-selection {
+    width: 100%;
+    float: left;
+    padding: 43px 50px 0 53px;
+    margin-bottom: 39px;
+}
+
+.content-block .purchase .price-widget .price-selection label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 0 0 0 25px;
+    margin-bottom: 5px;
+    line-height: 1.2;
+    font-size: 16px;
+    color: #6f7683;
+}
+
+.content-block .purchase .price-widget .price-selection label input {
+    display: none;
+}
+
+.content-block .purchase .price-widget .price-selection label::before {
+    height: 16px;
+    width: 16px;
+    content: "";
+    border: 1px solid #aaafb3;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.content-block .purchase .price-widget .price-selection label.active::before {
+    height: 16px;
+    width: 16px;
+    content: "";
+    border: 1px solid #4e94e0;
+    background: #ffffff url("../images/radio-bullet.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.content-block .purchase .price-widget .price-selection .click-to-pay {
+    width: 100%;
+    float: left;
+}
+
+.content-block .purchase .price-widget .price-selection .click-to-pay .purchase-method {
+    margin-top: 36px;
+}
+
+.content-block .purchase .price-widget .price-selection .click-to-pay .purchase-method span.price-container {
+    display: block;
+    float: left;
+    width: 100%;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.content-block .purchase .price-widget .price-selection .click-to-pay .purchase-method span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2d3138;
+}
+
+.content-block .purchase .price-widget .price-selection .click-to-pay .purchase-method span.regular-price {
+    text-decoration: line-through;
+    color: #aaafb3;
+}
+
+.content-block .purchase .price-widget .price-selection .click-to-pay .purchase-method span.price {
+    font-weight: 700;
+}
+
+.content-block .purchase .price-widget .price-selection .click-to-pay .btn {
+    width: 192px;
+    height: 48px;
+    color: #ffffff;
+    border: 0 none;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.2s ease-out;
+}
+
+.content-block .purchase .price-widget .price-selection .click-to-pay .btn.btn-default {
+    background: rgba(77, 148, 224, 1);
+}
+
+.content-block .purchase .price-widget .price-selection .click-to-pay .btn.btn-green {
+    background: rgba(155, 194, 37, 1);
+}
+
+.content-block .purchase .price-widget .price-selection .click-to-pay .btn.btn-default:hover {
+    background: rgba(77, 148, 224, 0.8);
+    transition: all 0.2s ease-in;
+}
+
+.content-block .purchase .price-widget .price-selection .click-to-pay .btn.btn-green:hover {
+    background: rgba(155, 194, 37, 0.8);
+    transition: all 0.2s ease-in;
+}
+
+.content-block .purchase .price-widget .delimiter {
+    width: 272px;
+    height: 1px;
+    background: #d1d3d8;
+    margin: 0 auto 39px auto;
+    content: "";
+    clear: both;
+}
+
+.content-block .purchase .price-widget .demo-href {
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.download-links {
+    display: table;
+    margin: 20px auto 47px auto;
+    height: 30px;
+}
+
+.download-links li {
+    display: inline-block;
+    float: left;
+    padding-right: 9px;
+    line-height: 1;
+    height: inherit;
+    vertical-align: middle;
+
+}
+
+.download-links li:last-child {
+    padding-right: 0;
+}
+
+.download-links li a {
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.download-links li a img {
+    vertical-align: middle;
+    transition: all .2s ease-in-out;
+}
+
+.download-links li:hover a img {
+    transform: scale(1.1);
+
+}
+
+
+/*Media*/
+@media only screen and (min-width: 1920px) {
+
+    body {
+        background: #ffffff url("../images/bg.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
+    }
+}
